@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[《笨办法学 python3》系列练习计划——0. 序言、目录]]></title>
+    <url>%2Fpost%2Fe11ec795.html</url>
+    <content type="text"><![CDATA[序言《笨办法学 python》是一本很多人推荐的 python 入门书籍，简单翻看后觉得最大的特色在于这本入门教材采用了“题目 - 练习”的形式来帮助人们掌握 python 的基本知识。对于注重动手的编程语言学习来说这种思路值得称赞！只可惜的是，国内中文版引进的比较早，当时作者主张：在各种主要的第三方库多未升级的情况下初学者仍应学习 python2 。前几年这样当然没问题，不过如今距离2020年官方停止支持 python2 已经没有多少时间了，而且纵观不少所谓《笨办法学 python3》的文章几乎还都是 python2 的内容只是换了标题…这让我想起了最近联合早报的“我国全球第六”的段子。 本着了解 python2、3之间实际区别以及练手的目的，我打算以现有的 python2 版为基础，用 python3 的方法完成一次全书的练习。有能力的朋友也可以购买阅读作者 python3版的电子版（英文）进行练习：《笨办法学 python3》 目录 1. 第一个程序——print() 练习 待续……….]]></content>
+      <tags>
+        <tag>python3.6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《笨办法学 python3》系列练习计划——1. 第一个程序 print() 练习]]></title>
+    <url>%2Fpost%2Fcbd0b1d8.html</url>
+    <content type="text"><![CDATA[通过程序写一行字显示出来恐怕是所有编程语言的第一课了， python3 中想要显示东西出来需要用到 print() 内置函数。 ###题目第一个练习是最简单的 print 语句，需要写入 ex1.py 的脚本中运行打印一些内容出来。 print &quot;Hello World!&quot; print &quot;Hello Again&quot; print &quot;I like typing this.&quot; print &quot;This is fun.&quot; print &apos;Yay! Printing.&apos; print &quot;I&apos;d much rather you &apos;not&apos;.&quot; print &apos;I &quot;said&quot; do not touch this.&apos; 加分要求如下： 让脚本 多 打印一行（7+1行） 让脚本 只 打印一行 在一行的起始位置加一个 # 号，并研究它的作用。 ###我的答案1.0. 基本答案 print(&quot;懒得输入英文了&quot;) print(&quot;还不如练习双拼打字&quot;) print(&quot;不过不能太偷懒了&quot;) print(&quot;This is fun&quot;) print(&quot;Yay! Printing&quot;) print(&quot;I&apos;d much rather you &apos;not&apos;&quot;) print(&quot;I said do not touch this&quot;) 1.1多一行 print(&quot;懒得输入英文了&quot;) print(&quot;还不如练习双拼打字&quot;) print(&quot;不过不能太偷懒了&quot;) print(&quot;This is fun&quot;) print(&quot;Yay! Printing&quot;) print(&quot;I&apos;d much rather you &apos;not&apos;&quot;) print(&quot;I said do not touch this&quot;) print(&quot;多打了一行&quot;) 1.2只一行 print(&quot;懒得输入英文了&quot;, end=&quot;&quot;) print(&quot;不过不能太偷懒了&quot;, end=&quot;&quot;) print(&quot;This is fun&quot;, end=&quot;&quot;) print(&quot;I&apos;d much rather you &apos;not&apos;&quot;, end=&quot;&quot;) print(&quot;I said do not touch this&quot;, end=&quot;&quot;) print(&quot;duodaleyihang&quot;, end=&quot;&quot;) print默认换行，通过添加end=””,可以实现多个print输出一行 1.加#号，测试下 ###拓展 Python3 VS. Python2 在 print ——打印一段内容出来——这方面 Py2 和 Py3 最直观的区别在于用不用 () 。在 Py3 中 print 成为了内置函数，和我们将来会遇到的函数一样调用函数需要使用括号 () 把要打印的内容放在括号内。 # python2 的 print : print &quot;这里是要打印的内容&quot; # python3 的 print : print(&quot;Py3 中我们这样打印&quot;)]]></content>
+      <tags>
+        <tag>python3.6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Chrome提示:Flash Player与您的地区不相容]]></title>
+    <url>%2Fpost%2F953fa027.html</url>
+    <content type="text"><![CDATA[今天发现使用chrome浏览器时，打开flash的网站后就出现”此Flash Player 与您的地区不相容“的提示信息。 按照提示操作后，点击 “重新安装” 按钮打开的是 2144网站 ，不是真实的Adobe官方网站。 ​ 一个即将消亡的技术，竟然还耍流氓，瞬间心里飞过十万个。。。。。。 官网安装​ 打开 Adobe的官网 （如何打开，就不说了，大家懂得），下载Flash Player版本，经过安装后不再出现地区不兼容的提示，则问题得到圆满解决。 ​ 如果问题依然存在，则继续向下看。 安装低版本​ 卸载已安装的Adobe Flash Player PPAPI，在网上下载 低于 30.0.0 的Adobe Flash Player PPAPI 离线包安装，同时设置为”不检查更新“。 可在此处下载 Flash Player PPAPI 25、26两个版本，如需其他版本自寻找。 查看当前win7、10系统，已安装的Flash版本： ​ 控制面板 -&gt; Flash Player -&gt; 更新 禁止Chrome更新Flash插件​ 在Chrome安装目录下有一个名叫PepperFlash得文件夹，删除该文件夹下的所有内容，将该文件夹权限设置为拒绝访问。 1、选择 PepperFlash 右键 2、切换到“安全”选项卡 3、点击“高级”， 然后 点击”添加“ 一个名为”Everyone“的用户，同时选择类型为“拒绝”，勾选所有权限。 ​ 再次用Chrome打开flash的网站，不再出现地区不兼容的提示 ，问题得到解决。 注： ​ 通过 chrome://components/ 命令，可查看Chrome所使用的Adobe Flash Player版本。 ​ Chrome提示:Flash Player与您的地区不相容]]></content>
+      <tags>
+        <tag>Chrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[第一篇博文]]></title>
+    <url>%2Fpost%2Fa1d8635a.html</url>
+    <content type="text"><![CDATA[因为感觉自己若能有一个独立的博客网站，能够在上面写写东西，能够把自己学到的东西给记录下来，这绝对是一件很cool的事，所以就有了这个博客网站。 因此自己特地花上两三天时间，终于把一个能够搬上台面的博客网站给整出来了。当然，目前网站里也只是完成了一些基本功能的整合，还有许多常用的功能尚未组装进来，所以后续的会继续进行完善。 写这个博文，第一是想庆祝下，自己这几天的忙绿终有结果，看着还不错 (￣▽￣)~*第二就是想提醒下自己，在以后的学习成长过程中最好能够把所看到的、所学到的内容整理出来，方便理清思路及以后的回顾，搭建这个博客的初衷也就是这；最后，希望自己能够稳步前行。 over！]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>博客，文章</tag>
+      </tags>
+  </entry>
+</search>
